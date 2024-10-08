@@ -1,5 +1,7 @@
-let skylander = document.getElementById("#skylander")
+let skylanderGuess = document.getElementById("#skylanderGuess");
 
-if (skylander=="spyro") {
-    console.log("hello");
-}
+skylanderGuess.addEventListener("submit", (e) => {
+    e.preventDefault();
+    
+    let guess = document.getElementById("#skylander");
+});
