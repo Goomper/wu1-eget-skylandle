@@ -55,3 +55,10 @@ header {
     margin-top: 0%;
     margin-left: 0%;
 }
+
+.importantNote {
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    justify-content: center;
+}

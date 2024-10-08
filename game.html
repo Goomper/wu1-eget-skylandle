@@ -18,31 +18,38 @@
         <div class="guesscontainer">
             <div class="guessbox">
                 <div class="answerbox">
-                    <div class="whichgame">
+                    <div class="gameoverlay" id="gameoverlay">
+                        <div class="whichgame">
                         
+                        </div>
                     </div>
-                    <div class="whichelement">
+                    <div class="elementoverlay">
+                        <div class="whichelement">
                         
+                        </div>
                     </div>
-                    <div class="whichtype">
+                    <div class="typeoverlay">
+                        <div class="whichtype">
                         
+                        </div>
                     </div>
-                    <div class="whichvariant">
+                    <div class="variantoverlay">
+                        <div class="whichvariant">
 
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="input">
-                <form action="" id="skylanderGuess">
-                    <select name="skylander" placeholder="Select A Skylander" id="skylander" onchange="this.form.submit()">
+                <form action="" id="skylanderGuess" name="skylanderinput" onsubmit="return validateForm()" method="get">
+                    <input type="text" name="skylander" id="skylander">
+                    <!-- <select name="skylander" placeholder="Select A Skylander" id="skylanderList" required>
                         <option value="spyro">Spyro</option>
-                        <option value="gillgrunt">Gill Grunt</option>
+                        <option value="gillgrunt">Gill Grunt</option> -->
                     </select>
-                        
-                    <button type="submit">Guess</button>
+                    <button type="submit">Choose</button>
                 </form>
             </div>
-            
         </div>
     </div>
 
